@@ -12,60 +12,73 @@ So far, I’ve explored:
 
 I’ll continue pushing my experiments and progress here as I go deeper into the LiveKit ecosystem.
 
----
 
 ## 🧩 Getting Started
 
 Follow these steps to set up and run the project locally.
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Prerequisites
+
+* Make sure you have **LiveKit CLI** installed:
+
+```bash
+brew install livekit-cli
+```
+
+* Authenticate with your LiveKit Cloud account:
+
+```bash
+lk cloud auth
+```
+
+> You must have a **LiveKit Cloud account**. Refer to the [LiveKit Docs](https://docs.livekit.io/agents/start/voice-ai/) for instructions specific to your OS.
+
+---
+
+### 2️⃣ Clone the Repository
 
 ```bash
 git clone git@github.com:GreatHayat/livekit-agents.git
 cd livekit-agents
 ```
 
-### 2️⃣ Create and Activate a Virtual Environment
+### 3️⃣ Create and Activate a Virtual Environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies
+### 4️⃣ Install Dependencies
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-### 4️⃣ Download Required Files
+### 5️⃣ Download Required Files
 
 ```bash
 python3 agent.py download-files
 ```
 
-### 5️⃣ Run the Agent
+### 6️⃣ Run the Agent
 
-* **Run in Console Mode**
+* **Console Mode**
 
-  ```bash
-  python3 agent.py console
-  ```
-* **Run in Dev/Playground Mode**
+```bash
+python3 agent.py console
+```
 
-  ```bash
-  python3 agent.py dev
-  ```
+* **Dev/Playground Mode**
 
-  Then connect to:
-  👉 [LiveKit Agents Playground](https://agents-playground.livekit.io/)
+```bash
+python3 agent.py dev
+```
+
+Connect to: 👉 [LiveKit Agents Playground](https://agents-playground.livekit.io/)
 
 ---
 
 ## 📚 Reference
 
 Official Docs: [LiveKit Voice AI Quick Start](https://docs.livekit.io/agents/start/voice-ai/)
-
----
-
-Would you like me to make it **developer-portfolio optimized** (with your name, project goals, and future plans section)? It’ll make your repo more impressive for GitHub visitors.
